@@ -225,6 +225,8 @@ section p {
     margin-left: 20px;
 }
 
+
+
 /* ================= RESPONSIVE ================= */
 
 /* Mobile */
@@ -287,5 +289,140 @@ section p {
 
     #experience, #Projects, #skills, #education, #awards {
         width: 90%;
+    }
+}
+
+/* ================= TEXT ALIGNMENT FIXES ================= */
+@media (max-width: 768px) {
+    /* Your existing code + ADD these text alignment rules */
+    
+    /* Home section - perfect center */
+    .home {
+        flex-direction: column !important;
+        padding: 80px 20px 50px !important;
+        text-align: center !important;
+    }
+    
+    .home-content, .home-content * {
+        text-align: center !important;
+    }
+    
+    .home-img h2, .home-img p {
+        text-align: center !important;
+    }
+    
+    /* Sections - headings center, content left */
+    section h1, section h2 {
+        text-align: center !important;
+    }
+    
+    section h3, section h4, section p, section ul, section li {
+        text-align: left !important;
+    }
+    
+    /* Content boxes - left aligned */
+    .exp-box, .project, .skill-box, .edu-box, .award-box {
+        text-align: left !important;
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+    
+    /* Connect icons - center */
+    .connect-icons {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    /* Paragraphs and lists */
+    p {
+        text-align: left !important;
+        line-height: 1.6 !important;
+    }
+    
+    ul {
+        text-align: left !important;
+        padding-left: 20px !important;
+    }
+}
+
+/* Small mobile - full width buttons */
+@media (max-width: 480px) {
+    nav a, .connect-icons a {
+        text-align: center !important;
+    }
+}
+/* ================= TEXT ALIGNMENT FIXES + CENTERED LOGO ================= */
+@media (max-width: 768px) {
+    /* LOGO - PERFECTLY CENTERED */
+    .logo {
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    
+    header {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* Home section - perfect center */
+    .home {
+        flex-direction: column !important;
+        padding: 80px 20px 50px !important;
+        text-align: center !important;
+    }
+    
+    .home-content, .home-content * {
+        text-align: center !important;
+    }
+    
+    .home-img h2, .home-img p {
+        text-align: center !important;
+    }
+    
+    /* Sections - headings center, content left */
+    section h1, section h2 {
+        text-align: center !important;
+    }
+    
+    section h3, section h4, section p, section ul, section li {
+        text-align: left !important;
+    }
+    
+    /* Content boxes - left aligned */
+    .exp-box, .project, .skill-box, .edu-box, .award-box {
+        text-align: left !important;
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+    
+    /* Connect icons - center */
+    .connect-icons {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    /* Paragraphs and lists */
+    p {
+        text-align: left !important;
+        line-height: 1.6 !important;
+    }
+    
+    ul {
+        text-align: left !important;
+        padding-left: 20px !important;
+    }
+}
+
+/* Small mobile - full width buttons */
+@media (max-width: 480px) {
+    nav a, .connect-icons a {
+        text-align: center !important;
+    }
+    
+    .logo {
+        font-size: 1.5rem !important;
     }
 }
